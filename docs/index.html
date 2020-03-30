@@ -37,15 +37,21 @@
     body {
       margin: 0;
       padding: 0;
+      height: 100%;
     }
 
     .wrapper {
       display: flex;
-      flex-flow: column;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    #footer {
+      flex-shrink: 0;
     }
 
     main {
-      flex: 1;
+      flex: 1 0 auto;
       border-top: 1px solid #eee;
       font-family: "Open Sans";
     }
@@ -94,10 +100,6 @@
       display: inherit;
       align-items: inherit;
       justify-content: inherit;
-    }
-
-    .buttons {
-      margin: 1em 0;
     }
 
     .l-container {
@@ -334,7 +336,7 @@
       <br />
     </main>
 
-    <div class="covid19-header-footer">
+    <div id="footer" class="covid19-header-footer">
       <footer class="Footer" data-ya-scope="footer">
         <div class="Footer-top">
           <div class="Footer-container l-container">
